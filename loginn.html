@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page - Soft Pink Theme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-pink-100">
+  <div class="border-2 border-pink-300 rounded-xl p-8 w-80 bg-pink-200 shadow-lg transition duration-300">
+    <h2 class="text-center text-pink-700 text-2xl font-semibold mb-6">Login</h2>
+    
+    <form id="loginForm">
+      <input
+        type="text"
+        id="username"
+        placeholder="Username"
+        class="w-full mb-4 px-4 py-3 rounded-full bg-pink-50 placeholder-pink-400 text-pink-700 font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300 ease-in-out"
+        required
+      />
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        class="w-full mb-6 px-4 py-3 rounded-full bg-pink-50 placeholder-pink-400 text-pink-700 font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300 ease-in-out"
+        required
+      />
+      <button
+        type="submit"
+        class="w-full py-3 rounded-full bg-pink-400 text-white font-bold transform hover:scale-105 hover:bg-pink-500 transition duration-300 ease-in-out shadow-md"
+      >
+        LOGIN
+      </button>
+    </form>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Mencegah form submit biasa
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      if (username === "rica oktavia" && password === "1234") {
+        // Jika cocok, pindah ke halaman welcome
+        window.location.href = "welcome.html";
+      } else {
+        // Jika salah, tampilkan peringatan
+        alert("Username atau password salah!");
+      }
+    });
+  </script>
+</body>
+</html>

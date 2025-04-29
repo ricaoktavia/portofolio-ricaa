@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Rica Oktavia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-jQCOeExK5vQ9PgToMwhDPToHKg+Yk0Loy8aXvMokqgLxkAKFy71KjIq9N4g/iyWr8YP5Rrx1ZB1UO7OP1rLeXA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .glow-pink {
+      box-shadow: 0 0 20px rgba(255, 192, 203, 0.5);
+    }
+    .icon-glow {
+      background-color: #fff;
+      color: #ec4899; /* pink-500 */
+      transition: all 0.3s ease;
+    }
+    .icon-glow:hover {
+      background-color: #fce7f3; /* pink-100 */
+      color: #db2777; /* pink-600 */
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.6);
+    }
+    .nav-link {
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #db2777; /* pink-600 */
+    }
+  </style>
+</head>
+<body class="bg-pink-100 text-pink-700 min-h-screen font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 md:px-16 py-4 bg-pink-50 shadow-md sticky top-0 z-50">
+    <div class="text-xl font-bold">Portofolio</div>
+    <div class="space-x-6 text-pink-500 font-medium">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <!-- Tombol Logout dengan warna yang serasi -->
+      <a href="loginn.html" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-full shadow-md transition">
+        Logout
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <main id="home" class="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10">
+    <!-- Left Text -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-3xl font-bold mb-4">Hello, it's me <span class="text-pink-600">Rica Oktavia</span></h2>
+      <p class="text-lg mb-6">And I am a Computer Science Student</p>
+
+      <!-- Social Icons -->
+      <div class="flex justify-center md:justify-start gap-4 mb-6 text-pink-400">
+        <a href="#" class="icon-glow p-3 rounded-full"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="icon-glow p-3 rounded-full"><i class="fab fa-whatsapp fa-lg"></i></a>
+        <a href="#" class="icon-glow p-3 rounded-full"><i class="fab fa-tiktok fa-lg"></i></a>
+      </div>
+
+      <!-- More About Me Button -->
+      <a href="#about" class="inline-block bg-pink-400 hover:bg-pink-500 text-white font-semibold px-6 py-2 rounded-full shadow-md transition">
+        More About Me
+      </a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+      <div class="w-60 h-60 rounded-full overflow-hidden border-8 border-pink-300 glow-pink">
+        <img src="gambar/ricaa.jpeg" alt="" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </main>
+
+  <!-- About Me Section -->
+  <section id="about" class="bg-pink-200 text-pink-800 px-8 md:px-32 py-12">
+    <h2 class="text-2xl font-bold mb-4 text-center">About Me</h2>
+    <p class="text-center text-lg max-w-2xl mx-auto">
+      Saya Rica Oktavia, mahasiswa ilmu komputer yang tertarik dengan dunia teknologi, desain UI/UX, dan pengembangan web. Saya suka eksplorasi kreativitas dalam hal coding dan visual yang lembut dan feminin 💖.
+    </p>
+  </section>
+
+  <!-- Placeholder for Skills, Portfolio, Contact -->
+  <section id="skills" class="px-8 md:px-32 py-12 text-center">
+    <h2 class="text-2xl font-bold mb-4">Skills</h2>
+    <p class="text-lg text-pink-700">[Tulis skill kamu di sini nanti yaa 💻✨]</p>
+  </section>
+
+  <section id="portfolio" class="bg-pink-200 px-8 md:px-32 py-12 text-center">
+    <h2 class="text-2xl font-bold mb-4">Portfolio</h2>
+    <p class="text-lg text-pink-700">[Tulis karya atau project kamu di sini 📂💡]</p>
+  </section>
+
+  <section id="contact" class="px-8 md:px-32 py-12 text-center">
+    <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <p class="text-lg text-pink-700">[Tulis kontak atau sosmed kamu di sini 📱💬]</p>
+  </section>
+
+</body>
+</html>
